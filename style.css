@@ -1,0 +1,110 @@
+body {
+  background-color: #ffffff; /* Fundo escuro para destacar o grid */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* O contêiner principal que segura a grade */
+.container {
+  display: grid;
+  /* Cria duas colunas de 200px cada */
+  grid-template-columns: 200px 200px;
+  border: 2px solid #000000;
+}
+
+/* Estilo padrão para todas as células */
+.cell {
+  width: 170px;
+  height: 170px;
+  background-color: #37009d; /* Cor de fundo cinza claro */
+  border: 1px solid #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  text-align: center;
+  box-sizing: border-box; /* Garante que padding e borda não aumentem o tamanho */
+  border-radius: 50px;
+  margin: 10px;
+}
+
+/* Estilo para as imagens dentro das células */
+.cell img {
+  max-width: 70%;
+  max-height: 70%;
+
+  object-fit: contain; /* Garante que a imagem não fique distorcida */
+}
+.cell-header img {
+  max-width: 30%;
+  max-height: 30%;
+
+  object-fit: contain; /* Garante que a imagem não fique distorcida */
+}
+
+.logo {
+  align-items: left;
+  background-color: #ffffff;
+}
+
+/* Estilos Específicos para cada Célula */
+
+/* Célula do topo (ocupa duas colunas) */
+
+.cell-header {
+  width: 404px;
+  height: 200px;
+  background-color: #37009d; /* Cor de fundo cinza claro */
+  border: 1px solid #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Célula do Facebook */
+
+/* Célula do Uber */
+
+/* Célula "Sem Internet" */
+#no-internet {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+}
+#no-internet p {
+  margin: 5px 0;
+}
+.strikethrough {
+  color: red;
+  position: relative; /* Necessário para a linha de corte */
+  display: inline-block;
+  padding: 0 10px;
+}
+/* Cria a linha vermelha diagonal de corte */
+.strikethrough::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  right: 0;
+  border-top: 5px solid red;
+  transform: rotate(-12deg);
+}
+
+/* Célula SOS */
+#sos h1 {
+  font-size: 5em;
+  font-weight: bold;
+  margin: 0;
+  /* Cria o gradiente de cor no texto */
+  background: linear-gradient(to top, #ff8c00, #ff0000);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
