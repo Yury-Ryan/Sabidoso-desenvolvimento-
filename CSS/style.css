@@ -19,7 +19,15 @@ body {
   height: 1000px;
   width: 100vw;
   align-items: center;
+  justify-content: center;
   flex: 1;
+}
+#titulo {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 20vh;
+  color: #00000060;
 }
 .container2 {
   display: grid;
@@ -27,61 +35,17 @@ body {
   gap: 120px;
   padding: 5vw; /* padding relativo à tela */
   margin-top: 50vh; /* menor que antes */
-  background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 30px;
+  background: linear-gradient(135deg, rgb(62, 62, 62), rgb(0, 0, 0));
+
   backdrop-filter: blur(10px);
-  border-top: solid 0.5vw rgba(12, 239, 0, 0.837);
   justify-items: center;
 }
-#cell1 {
+#cell3 img {
+  filter: brightness(2);
 }
-#cell2 {
-}
-#cell3 {
-  background-color: #0000007f;
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.673),
-    rgba(0, 0, 0, 0.118),
-    rgba(36, 255, 51, 0.415)
-  );
-}
-#cell4 {
-  background-color: #0000007f;
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.673),
-    rgba(0, 0, 0, 0.118),
-    rgba(36, 182, 255, 0.415)
-  );
-}
-#cell5 {
-  background-color: #0000007f;
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.673),
-    rgba(0, 0, 0, 0.118),
-    rgba(36, 182, 255, 0.415)
-  );
-}
-#cell6 {
-  background-color: #0000007f;
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.726),
-    rgba(0, 0, 0, 0.045),
-    rgba(205, 0, 0, 0.415)
-  );
-}
-
 .cell {
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.726),
-    rgba(0, 0, 0, 0.045),
-    rgba(65, 0, 205, 0.415)
-  );
-
+  box-shadow: 5px 5px 10px rgb(0, 0, 0);
+  background: linear-gradient(135deg, rgb(49, 49, 49), rgb(0, 0, 0));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,9 +55,11 @@ body {
   box-sizing: border-box;
   width: 30vw; /* antes era 170px */
   height: 30vw; /* proporcional à largura da tela */
-  max-width: 200px; /* não fica gigante em telas grandes */
-  max-height: 200px;
-  border-radius: 25%;
+  max-width: 250px; /* não fica gigante em telas grandes */
+  max-height: 13vh;
+  border-radius: 4vw;
+  border: solid rgb(37, 37, 37);
+  border-left: solid #000000 0.25vw;
 }
 
 .cell img {
@@ -104,6 +70,9 @@ body {
 .cell-header img {
   max-width: 100%;
   max-height: 100%;
+  background-color: #ffffff6c;
+  border-radius: 40px;
+  padding-inline: 5vw;
 }
 
 .logo {
@@ -112,12 +81,17 @@ body {
 }
 
 .cell-header {
-  width: 100vw;
+  width: 90%;
   height: 10vh;
-  background-color: #ffffff; /* Cor de fundo cinza claro */
+  background-color: #ffffff2d; /* Cor de fundo cinza claro */
   position: fixed;
   z-index: 1000;
   display: flex;
+  backdrop-filter: blur(20px);
+  border-radius: 60px;
+  margin-inline: 5vw auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /* Célula do Facebook */
