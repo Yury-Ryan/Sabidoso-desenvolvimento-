@@ -8,8 +8,8 @@ body {
   min-height: 100vh;
   margin: 0;
 
-  background-image: url(../Imagens/wmremove-transformed.webp);
-  background-size: cover;
+  background-image: url(../Imagens/image\ copy\ 5.png);
+
   background-repeat: no-repeat;
   background-attachment: fixed; /* imagem fixa */
   background-position: center;
@@ -27,7 +27,15 @@ body {
   justify-content: center;
   display: flex;
   margin-top: 20vh;
-  color: #00000060;
+  color: #000000c9;
+  font-size: 100px;
+  background: linear-gradient(
+    135deg,
+    rgba(219, 219, 219, 0.432),
+    rgba(116, 116, 116, 0.495)
+  );
+  margin-inline: 29vw;
+  border-radius: 30px;
 }
 .container2 {
   display: grid;
@@ -35,7 +43,7 @@ body {
   gap: 120px;
   padding: 5vw; /* padding relativo à tela */
   margin-top: 50vh; /* menor que antes */
-  background: linear-gradient(135deg, rgb(62, 62, 62), rgb(0, 0, 0));
+  background: linear-gradient(135deg, rgb(61, 60, 68), rgb(0, 0, 0));
 
   backdrop-filter: blur(10px);
   justify-items: center;
