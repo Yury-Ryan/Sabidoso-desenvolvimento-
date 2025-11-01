@@ -28,13 +28,13 @@ body {
   display: flex;
   margin-top: 20vh;
   color: #000000c9;
-  font-size: 100px;
+  font-size: 14vw;
   background: linear-gradient(
     135deg,
     rgba(219, 219, 219, 0.432),
     rgba(116, 116, 116, 0.495)
   );
-  margin-inline: 29vw;
+  margin-inline: 15vw;
   border-radius: 30px;
 }
 .container2 {
@@ -43,7 +43,7 @@ body {
   gap: 120px;
   padding: 5vw; /* padding relativo à tela */
   margin-top: 50vh; /* menor que antes */
-  background: linear-gradient(135deg, rgb(61, 60, 68), rgb(0, 0, 0));
+  background: linear-gradient(135deg, rgb(40, 40, 45), rgb(0, 0, 0));
 
   backdrop-filter: blur(10px);
   justify-items: center;
@@ -52,7 +52,7 @@ body {
   filter: brightness(2);
 }
 .cell {
-  box-shadow: 5px 5px 10px rgb(0, 0, 0);
+  box-shadow: 5px 10px 10px rgb(0, 0, 0);
   background: linear-gradient(135deg, rgb(49, 49, 49), rgb(0, 0, 0));
   display: flex;
   justify-content: center;
